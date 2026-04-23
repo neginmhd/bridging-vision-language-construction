@@ -2,10 +2,9 @@
 
 ![Workflow](./figures/workflow.png)
 
-This repository accompanies the paper: **Bridging Vision and Language in Construction: A Review of Visual-to-Text Generation**
-It presents a systematic search and review of visual-to-text generation in construction, here we share raw search results, code for identifying relevant studies, and supplementary analyses of the findings.
+This is the repository of **Bridging Vision and Language in Construction: A Review of Visual-to-Text Generation**,a systematic search and review of visual-to-text generation in construction, here we share raw search results, code, and supplementary analyses of the findings.
 
-for details please refer to:
+for details please refer to the paper:
 - Title: *Bridging Vision and Language in Construction: A Review of Visual-to-Text Generation*    
 
 ---
@@ -13,25 +12,7 @@ for details please refer to:
 ## 📊 Repository Structure
 
 - `data/` — raw search results (`scopus_raw_2026-02-13.csv`, `wos_raw_2026-02-13.xls`) and processed dataset (`master_deduplicated.csv`)- `code/` — scripts for analysis  
-- `figures/` — workflow and paper figures  
+- `figures/` — workflow 
 - `supplementary/` — additional materials  
 
 ---
-
-## 🔍 Workflow
-This repository follows the workflow presented in the paper, covering:
-
-- Construction problems  
-- Input data and acquisition  
-- Data preparation  
-- Model development  
-- Output characteristics  
-- Evaluation and assessment  
-- Real-world deployment  
-
----
-
-## 📎 Notes
-- Raw search data are provided for reproducibility  
-- Analysis scripts support transparency of the review process  
-- Supplementary materials extend the results reported in the paper  
