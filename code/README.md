@@ -1,4 +1,4 @@
-# 📄 Title Cleaning and Deduplication for Systematic Search Records
+### 📄 Title Cleaning and Deduplication for Systematic Search Records
 
 This script prepares a master dataset for screening by combining raw search results from **Scopus** and **Web of Science (WoS)**. It standardizes titles, removes duplicates within and across databases, and exports a single deduplicated file.
 
