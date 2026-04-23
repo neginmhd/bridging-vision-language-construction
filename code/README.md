@@ -33,7 +33,7 @@ Place the following files in the working directory:
 
 ---
 
-## ⚙️ Workflow
+## ⚙️ Pipeline
 
 ### 1. Load Data
 Raw datasets are imported using `pandas`.
