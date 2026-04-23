@@ -1,26 +1,22 @@
 # 📄 Title Cleaning and Deduplication for Systematic Search Records
 
-This script prepares the master dataset for screening by combining raw search results from **Scopus** and **Web of Science (WoS)**. It standardizes titles, removes duplicates within and across databases, and exports a single deduplicated dataset.
+This script prepares a master dataset for screening by combining raw search results from **Scopus** and **Web of Science (WoS)**. It standardizes titles, removes duplicates within and across databases, and exports a single deduplicated file.
 
 ---
 
 ## 🎯 Purpose
 
-The script supports transparency and reproducibility in the **identification stage** of the systematic search. It:
+Supports transparency and reproducibility in the **identification stage** by:
 
-- loads raw records from Scopus and WoS  
-- standardizes title fields  
-- normalizes titles for consistent comparison  
-- removes internal duplicates within each database  
-- identifies overlap across databases  
-- merges unique records into a master dataset  
-- exports a clean file for screening  
+- standardizing title fields  
+- normalizing titles for comparison  
+- removing internal duplicates (Scopus, WoS)  
+- identifying cross-database overlap  
+- merging unique records into a master dataset  
 
 ---
 
-## 📥 Input Files
-
-Place the following files in the working directory:
+## 📥 Input
 
 - `scopus_raw_2026-02-13.csv`  
 - `wos_raw_2026-02-13.xls`  
@@ -29,53 +25,23 @@ Place the following files in the working directory:
 
 ## 📤 Output
 
-- `master_deduplicated.csv` — final dataset ready for screening  
+- `master_deduplicated.csv` — dataset ready for screening  
 
 ---
 
 ## ⚙️ Pipeline
 
-### 1. Load Data
-Raw datasets are imported using `pandas`.
-
-### 2. Standardize Fields
-WoS column `Article Title` is renamed to `Title` for consistency.
-
-### 3. Normalize Titles
-Titles are cleaned to create a comparison key (`title_key`):
-- lowercase conversion  
-- whitespace trimming  
-- removal of special characters (except `-` and `'`)  
-- normalization of spacing  
-
-### 4. Remove Internal Duplicates
-Duplicates are removed separately within:
-- Scopus  
-- WoS  
-
-### 5. Detect Cross-Database Overlap
-- Shared records are identified using normalized titles  
-- Scopus entries are labeled:
-  - `Scopus`  
-  - `Scopus, WoS` (if overlap exists)  
-- Overlapping WoS records are excluded  
-- Unique WoS records are retained and labeled `WoS`  
-
-### 6. Merge Datasets
-Scopus (deduplicated) + unique WoS records are combined into a master dataset.
-
-### 7. Export and Summary
-The script saves the final dataset and prints:
-- duplicates removed (Scopus and WoS)  
-- overlap between databases  
-- total records removed  
-- final dataset size  
+1. Load Scopus and WoS datasets  
+2. Standardize title fields (`Article Title` → `Title`)  
+3. Normalize titles (lowercase, clean characters, normalize spacing)  
+4. Remove duplicates within each database  
+5. Identify overlap across databases  
+6. Merge Scopus with unique WoS records  
+7. Export final dataset and summary statistics  
 
 ---
 
 ## 🧰 Dependencies
-
-Install required packages:
 
 ```bash
 pip install pandas xlrd
