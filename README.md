@@ -2,27 +2,20 @@
 
 ![Workflow](./figures/workflow.png)
 
+## 📌 Overview
 This repository accompanies the paper:
 
-**Bridging Vision and Language in Construction: A Review of Automated Visual-to-Text Generation**
+**Bridging Vision and Language in Construction: A Scoping Review of Automated Image–Video Captioning**
 
-It provides a systematic search and review of visual-to-text generation in construction, including raw search results, code, and supplementary materials.
+It presents a systematic search and review of visual-to-text generation in construction, along with shared raw search results, code, and supplementary analyses to support transparency and reproducibility.
 
 ---
 
 ## 📄 Paper
-[Paper link here]
+- Title: *Bridging Vision and Language in Construction: A Scoping Review of Automated Image–Video Captioning*  
+- Status: Under review  
+- Link: *[Add link here]*
 
 ---
 
-## 📊 Repository Contents
-
-- `data/` → raw search results and processed datasets  
-- `code/` → scripts for analysis  
-- `figures/` → workflow and paper figures  
-- `supplementary/` → additional materials  
-
----
-
-## 📌 Notes
-This repository is organized based on the workflow presented in the paper.
+## 📊 Repository Structure
