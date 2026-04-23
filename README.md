@@ -12,8 +12,7 @@ for details please refer to:
 
 ## 📊 Repository Structure
 
-- `data/` — raw search results and processed datasets  
-- `code/` — scripts for analysis  
+- `data/` — raw search results (`scopus_raw_2026-02-13.csv`, `wos_raw_2026-02-13.xls`) and processed dataset (`master_deduplicated.csv`)- `code/` — scripts for analysis  
 - `figures/` — workflow and paper figures  
 - `supplementary/` — additional materials  
 
