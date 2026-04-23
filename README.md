@@ -4,7 +4,7 @@
 
 This repository accompanies the paper:
 
-**Bridging Vision and Language in Construction: A Scoping Review of Automated Image–Video Captioning**
+**Bridging Vision and Language in Construction: A Review of Automated Visual-to-Text Generation**
 
 It provides a systematic search and review of visual-to-text generation in construction, including raw search results, code, and supplementary materials.
 
