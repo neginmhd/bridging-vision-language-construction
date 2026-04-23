@@ -19,11 +19,11 @@ It presents a systematic search and review of visual-to-text generation in const
 ---
 
 ## 📊 Repository Structure
-data/ # raw search results and processed datasets
-code/ # scripts for analysis
-figures/ # workflow and paper figures
-supplementary/ # additional materials
 
+- `data/` — raw search results and processed datasets  
+- `code/` — scripts for analysis  
+- `figures/` — workflow and paper figures  
+- `supplementary/` — additional materials  
 
 ---
 
