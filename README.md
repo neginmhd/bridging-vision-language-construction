@@ -38,8 +38,3 @@ This repository follows the workflow presented in the paper, covering:
 - Raw search data are provided for reproducibility  
 - Analysis scripts support transparency of the review process  
 - Supplementary materials extend the results reported in the paper  
-
----
-
-## 📬 Contact
-For questions or collaboration, please open an issue or contact the author.
